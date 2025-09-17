@@ -7,7 +7,7 @@ function* handleRegister(action: ReturnType<typeof actions.registerRequest>) {
   try {
     yield call(registerAPI, action.payload);
     // @ts-ignore
-    const response = yield call(loginAPI, creds);
+    const response = yield call(loginAPI, action.payload);
     Cookies.set("token", response.token, { expires: 7, sameSite: "Lax" });
     yield put(actions.authSuccess(response.username));
   } catch (err: any) {
