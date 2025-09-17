@@ -1,0 +1,68 @@
+.flower__card {
+    background: #1e1e1e;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.6);
+    }
+
+    img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 0.75rem;
+    }
+
+    .title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+        color: #ffffff;
+    }
+
+    .price {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #66bb6a;
+        margin-bottom: 0.75rem;
+    }
+
+    .add_to_cart {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background-color: #4cafef;
+        color: #fff;
+        border-radius: 6px;
+        font-weight: bold;
+        text-align: center;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: #2979ff;
+        }
+    }
+
+    .added_to_cart {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 10px 16px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: not-allowed;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+
+        &:hover {
+            background-color: #45a049;
+            transform: scale(1.02);
+
+        }
+    }
+}

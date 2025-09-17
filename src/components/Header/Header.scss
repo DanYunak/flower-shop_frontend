@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 1rem 2rem;
+  color: #e0e0e0;
+  border-bottom: 1px solid #2c2c2c;
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4cafef;
+    cursor: pointer;
+    transition: color 0.2s;
+
+    &:hover {
+      color: #2979ff;
+    }
+  }
+
+  .header__right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    .username {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #ffffff;
+      position: relative;
+      top: -3px;
+    }
+
+    .user__icon,
+    .cart__icon,
+    .logout__icon {
+      cursor: pointer;
+      color: #e0e0e0;
+      transition: color 0.2s, transform 0.2s;
+
+      &:hover {
+        color: #4cafef;
+        transform: scale(1.1);
+      }
+
+      svg {
+        font-size: 1.6rem; 
+      }
+    }
+  }
+}
